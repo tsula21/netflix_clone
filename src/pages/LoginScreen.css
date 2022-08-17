@@ -1,0 +1,236 @@
+.loginscreen {
+  position: relative;
+  height: 100%;
+  min-height: 745px;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/c8c8a0ad-86d6-45f1-b21d-821afa4e5027/489c65c0-ba9a-4567-99f5-14e9f775fcdc/GE-en-20220801-popsignuptwoweeks-perspective_alpha_website_small.jpg")
+    center no-repeat;
+  background-size: cover;
+}
+
+.loginScreen_logo {
+  position: fixed;
+  left: 0;
+  width: 166px;
+  object-fit: contain;
+  padding-left: 3.5rem;
+  padding-top: 20px;
+}
+
+.loginScreen_button {
+  position: fixed;
+  margin-right: 3.5rem;
+  right: 0px;
+  top: 20px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  margin-top: 8px;
+}
+
+.loginScreen_gradient {
+  width: 100%;
+  height: 100vh;
+  min-height: 745px;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.loginScreen_body > h1 {
+  max-width: 800px;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+.loginScreen_body > h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin: 5px auto;
+  /* margin-bottom: 30px; */
+}
+
+.loginScreen_body > h3 {
+  font-size: 1.2rem;
+  max-width: none;
+  padding-bottom: 20px;
+  font-weight: 400;
+  padding-top: 0.85rem;
+}
+
+.loginScreen_input form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginScreen_body {
+  position: absolute;
+  top: 10%;
+  /* top: 24%; */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  /* padding: 20px; */
+  left: 0;
+  right: 0;
+}
+
+.loginScreen_body.two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 174px;
+}
+
+.loginScreen_input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 70px;
+  width: 31.3%;
+  border: none;
+  max-width: 600px;
+  width: 500px;
+  color: #000;
+}
+
+.loginScreen_getStarted {
+  /* padding: 16px 20px; */
+  height: 70px;
+  width: 245px;
+  font-size: 1.875rem;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
+  border-bottom-left-radius: 0;
+  border-left: 1px solid #333;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: rgb(51, 51, 51);
+  border-top-left-radius: 0;
+  border-radius: 2px;
+}
+
+.loginScreen_input {
+  width: 100%;
+  /* margin: 20px; */
+}
+
+@media (max-width: 1451px) {
+  .loginLogo {
+    width: 134px;
+    height: 36px;
+  }
+
+  .loginScreen_body > h1 {
+    font-size: 3.125rem;
+    max-width: 600px;
+  }
+
+  .loginScreen_body > h2 {
+    max-width: 600px;
+  }
+
+  .loginScreen_input > form > input {
+    width: 450px;
+    height: 60px;
+  }
+
+  .loginScreen_getStarted {
+    width: 212px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .loginLogo {
+    width: 108px;
+    height: 32px;
+  }
+  .loginScreen_body > h3 {
+    max-width: 446px;
+    font-size: 23px;
+  }
+
+  .loginScreen_input form {
+    flex-direction: column;
+  }
+
+  .loginScreen_input > form > input {
+    width: 450px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .loginScreen_getStarted {
+    width: 130px;
+    min-height: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 741px) {
+  .loginScreen_input > form > input {
+    width: 80%;
+    height: 48px;
+  }
+
+  .loginScreen_body > h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 559px) {
+  .loginLogo {
+    width: 88px;
+    height: 24px;
+  }
+
+  .loginbtn {
+    padding-top: 0.08rem;
+    padding-bottom: 0.08rem;
+    padding-left: 0.37rem;
+    padding-right: 0.37rem;
+  }
+
+  .loginScreen_input > form > input {
+    width: 90%;
+  }
+
+  .loginScreen_body > h1 {
+    font-size: 1.75rem;
+    width: 85%;
+  }
+
+  .loginScreen_body > h2 {
+    font-size: 1.125rem;
+    margin: 1rem auto;
+    width: 85%;
+  }
+
+  .loginScreen_body > h3 {
+    /* max-width: 400px; */
+    width: 85%;
+  }
+}
+
+@media (max-width: 461px) {
+}
