@@ -131,6 +131,7 @@ const SingleMovie = () => {
       });
   };
 
+  /* A hook that is used to fetch data from an API. */
   useEffect(() => {
     //
     fetchData();
@@ -145,7 +146,6 @@ const SingleMovie = () => {
     return string?.length > n ? string.substr(0, n - 1) + "..." : string;
   }
 
-  // const filmGenres = genres.find((item) => item.id == film.genre_ids[0]);
   return (
     <>
       {/* <Nav /> */}
