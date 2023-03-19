@@ -127,7 +127,7 @@ const SingleMovie = () => {
         })
       )
       .catch((errors) => {
-        // react on errors.
+        // for errors
       });
   };
 
