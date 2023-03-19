@@ -40,7 +40,17 @@ const Home = () => {
         </div>
       </div>
       {/* <Nav /> */}
-      <Main />
+      {/* <Main /> */}
+      <div className="newmain">
+        <div className="newmain_container">
+          <h2>Movies</h2>
+          <p>
+            Movies move us like nothing else can, whether they’re scary, funny,
+            dramatic, romantic or anywhere in-between. So many titles, so much
+            to experience.
+          </p>
+        </div>
+      </div>
       <Row rowID="1" title="Upcoming" fetchURL={requests.requestUpcoming} />
       <Row
         rowID="2"

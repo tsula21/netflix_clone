@@ -63,7 +63,10 @@ const Row = ({ title, fetchURL, rowID }) => {
                 />
               </Link>
               <div>
-                <p className="rowtitle text-white flex justify-center mt-[2px]">
+                <p
+                  onClick={() => console.log(item)}
+                  className="rowtitle text-white flex justify-center mt-[2px]"
+                >
                   {item?.title}
                 </p>
               </div>

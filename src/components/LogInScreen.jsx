@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import SignUpScreen from "./SignUpScreen";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
 import back from "../assets/back2.png";
 
 const LogInScreen = ({ signIn, setSignIn, setMenu }) => {
